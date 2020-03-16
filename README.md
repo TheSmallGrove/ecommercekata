@@ -1,20 +1,12 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+﻿# VillaPlus.Exercise
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## To run the exercise you need to use the Visual Studio Test Explorer. 
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Here is some notes about the exercise.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+1) The code is in a single assembly as requested. It should be separated in almost three assemblies
+- Pricing: Containung only calculation business logic and promotions
+- Contract: Containing public interfaces to let developers extend with specific promotions
+- Entities: Probably these comes from an external system. the only have to implement required interfaces for calculation
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+2) The structure is made to be extensible. PricingCalculator contains logic and promotions can be easily added without changing logic. The best should be to publish it as a nuget package used by implementors.
