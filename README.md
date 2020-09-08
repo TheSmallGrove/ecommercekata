@@ -1,4 +1,4 @@
-﻿# E-commerce Kata
+﻿# e-commerce kata
 
 ## To run the exercise you need to use the Visual Studio Test Explorer. 
 
