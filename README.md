@@ -1,4 +1,4 @@
-﻿# VillaPlus.Exercise
+﻿# E-commerce Kata
 
 ## To run the exercise you need to use the Visual Studio Test Explorer. 
 
